@@ -13,10 +13,10 @@ spatial and single-cell transcriptomic data.
 
 ## Installation
 
-You can install the development version of STcomm like so:
+STcomm R package can be easily installed from Github using devtools:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+devtools::install_github("Vanjia-lee/STcomm")
 ```
 
 ## Quick Guide to Getting Started with stComm
@@ -59,10 +59,10 @@ co-expressed Ligand-Receptor (LR) pairs for spatially co-localized cell
 types by performing Fisher exact test on binarized co-localized cell
 type pairs and co-expressed LR pairs at spot level. Next, you calculate
 significant communication between LR pairs in co-localized cell type
-pairs based on the refrence single cell transcriptomic data. Finally, to
+pairs based on the reference single cell transcriptomic data. Finally, to
 get high confidence and spatial aware cell-cell communication, you can
 keep only spatially relevant communication information based on the
-above Fisher exact significancy.`st_comm` function can help you
+above Fisher's exact test. `st_comm` function can help you
 characterize confident spatially resolved cell-cell interaction with the
 tissue organization.
 
